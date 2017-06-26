@@ -4,7 +4,7 @@
 Good *CreateGoodsList(int *number)
 {
 	char name[10]; //商品名称 
-	printf("请输入商品名称,当输入 bye 表示商品列表创建结束:   ");
+	printf("please input good name, input bye to end:   ");
 	gets(name); //获取商品名称 
 	printf("\n");
 	if( 0 == strcmp(name,"bye") )
@@ -22,11 +22,11 @@ Good *CreateGoodsList(int *number)
 
 	strcpy(pGood1->name, name); //获取第一个商品的名称 
 	memset(name, 0, 10);
-	printf("请输入商品单价:  ");
+	printf("input price:  ");
 	scanf("%f", &(pGood1->price));
 	getchar();
 	printf("\n");
-	printf("请输入商品进货数量:  ");
+	printf("input amount:  ");
 	scanf("%d", &(pGood1->amount));
 	getchar();
 	printf("\n");
@@ -35,7 +35,7 @@ Good *CreateGoodsList(int *number)
 
 	while(1)
 		{
-			printf("请输入商品名称:  ");
+			printf("input good name:  ");
 			gets(name);
 			printf("\n");
 			if( 0 == strcmp(name,"bye") )
@@ -45,11 +45,11 @@ Good *CreateGoodsList(int *number)
 			pGood1 = (Good *)malloc(GOOD_SIZE);
 			strcpy(pGood1->name, name);
 			memset(name, 0, 10);
-			printf("请输入商品单价:  ");
+			printf("input price:  ");
 			scanf("%f", &(pGood1->price));
 			getchar();
 			printf("\n");
-			printf("请输入商品进货数量:");
+			printf("input amount:");
 			scanf("%d", &(pGood1->amount));
 			getchar();
 			printf("\n");

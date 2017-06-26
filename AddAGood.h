@@ -1,5 +1,7 @@
 #ifndef _ADDAGOOD_H_
 #define _ADDAGOOD_H_
+#include <stdio.h>
+#include <stdlib.h>
 #include "Good.h"
 
 /*

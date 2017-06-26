@@ -6,7 +6,7 @@ int ModifyAGood(Good *head, Good good)
 	// 判断商品列表是否为空 
 	if(NULL == head)
 	{
-		printf("商品列表为空,无法修改!\n");
+		printf("good list is empty!\n");
 		
 		return -1;
 	}
@@ -28,7 +28,7 @@ int ModifyAGood(Good *head, Good good)
 	
 	if(NULL == pGood)
 	{
-		printf("没有找到此货物!\n");
+		printf("can not find this good!\n");
 		return -2;
 	}
 	

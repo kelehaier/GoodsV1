@@ -16,7 +16,7 @@ Good  *DeleteAGood(Good *head, const char *name, int *number)
 			pGood1 = NULL;
 			*number = *number - 1;
 			
-			printf("商品删除成功\n");
+			printf("delete a good succesful!\n");
 
 			return head;
 		}
@@ -28,7 +28,7 @@ Good  *DeleteAGood(Good *head, const char *name, int *number)
 					pGood1->next = pGood2->next;
 					pGood2->next = NULL;
 					free(pGood2);
-					printf("删除成功!\n");
+					printf("delete a good succesful!\n");
 
 					break;
 				}
@@ -39,7 +39,7 @@ Good  *DeleteAGood(Good *head, const char *name, int *number)
 
 	if(NULL == pGood2)
 		{
-			printf("没找到此商品!\n");
+			printf("can not find this good!\n");
 		}
 
 	return head;

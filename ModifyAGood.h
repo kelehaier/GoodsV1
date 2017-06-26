@@ -1,5 +1,6 @@
 #ifndef _MODIFYAGOOD_H_
 #define _MODIFYAGOOD_H_
+#include <stdio.h>
 #include "Good.h"
 
 /*
