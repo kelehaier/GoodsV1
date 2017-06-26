@@ -12,6 +12,6 @@
 函数返回值:
    返回创建的商品头节点  
 */
-extern Good *CreatGoodsList(int *count);
+extern Good *CreateGoodsList(int *count);
 
 #endif

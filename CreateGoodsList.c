@@ -1,11 +1,13 @@
 #include "CreateGoodsList.h"
+#include <stdio.h>
 #include <string.h>
 
 Good *CreateGoodsList(int *number)
 {
 	char name[10]; //商品名称 
 	printf("please input good name, input bye to end:   ");
-	gets(name); //获取商品名称 
+	fgets(name, 9, stdin); //获取商品名称 
+	name[strlen(name) - 1] = '\0';
 	printf("\n");
 	if( 0 == strcmp(name,"bye") )
 		{
@@ -36,7 +38,8 @@ Good *CreateGoodsList(int *number)
 	while(1)
 		{
 			printf("input good name:  ");
-			gets(name);
+			fgets(name, 9, stdin); //获取商品名称 
+	        name[strlen(name) - 1] = '\0';
 			printf("\n");
 			if( 0 == strcmp(name,"bye") )
 				{
